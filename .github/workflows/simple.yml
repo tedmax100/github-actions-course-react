@@ -1,0 +1,15 @@
+name: Shell Commandss
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: echo a string
+        run: echo "hello world"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+          
